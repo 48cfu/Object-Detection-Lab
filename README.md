@@ -45,3 +45,18 @@ https://conda.io/docs/using/envs.html#remove-an-environment
 
 ### Tips
 - Some windows users have reported the driving video as playable only in Jupyter Notebook operating in Chrome browser, and not in media player or Jupyter Notebook operating in other browsers.  In contrast the post-segmentation video appears to be operating across players and browsers.
+
+### Running with Docker
+If you have already installed the [CarND Term1 Starter Kit](https://github.com/udacity/CarND-Term1-Starter-Kit/blob/master/README.md) you should be good to go!   If not, you should install the starter kit to get started on this project.
+
+If you're using `Windows PowerShell`:
+
+```sh
+docker run -it --rm --entrypoint "/run.sh" -p 8888:8888 -v ${pwd}:/src udacity/carnd-term1-starter-kit
+```
+
+If you're using `bash` or Docker Quickstart Terminal:
+
+```sh
+docker run -it --rm --entrypoint "/run.sh" -p 8888:8888 -v `pwd`:/src udacity/carnd-term1-starter-kit
+```
